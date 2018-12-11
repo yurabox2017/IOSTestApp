@@ -8,33 +8,18 @@ using AVFoundation;
 
 namespace IOSTestApp
 {
-    [Register("UniversalView")]
-    public class UniversalView : UIView
-    {
-        public UniversalView()
-        {
-            Initialize();
-        }
-
-        public UniversalView(RectangleF bounds) : base(bounds)
-        {
-            Initialize();
-        }
-
-        void Initialize()
-        {
-            BackgroundColor = UIColor.Red;
-        }
-    }
-
     [Register("GetBarcodeView")]
-    public class GetBarcodeView : UIViewController
+    public class GetBarcodeView : UIViewController, AVCaptureMetadataOutputObjectsDelegate
     {
         AVCaptureSession captureSession = new AVCaptureSession();
         AVCaptureVideoPreviewLayer previewLayer = new AVCaptureVideoPreviewLayer();
 
         public GetBarcodeView()
         {
+        }
+        protected GetBarcodeView(IntPtr handle) : base(handle)
+        {
+            // Note: this .ctor should not contain any initialization logic.
         }
 
         public override void DidReceiveMemoryWarning()
@@ -47,9 +32,9 @@ namespace IOSTestApp
 
         public override void ViewDidLoad()
         {
-            View = new UniversalView();
 
             base.ViewDidLoad();
+            initCameraView();
 
             // Perform any additional setup after loading the view
         }

@@ -5,7 +5,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>IOSTestApp</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.companyname.IOSTestApp</string>
+	<string>com.xamarin.dirols85.IOSTestApp</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
