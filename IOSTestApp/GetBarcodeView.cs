@@ -9,7 +9,7 @@ using AVFoundation;
 namespace IOSTestApp
 {
     [Register("GetBarcodeView")]
-    public class GetBarcodeView : UIViewController, AVCaptureMetadataOutputObjectsDelegate
+    public class GetBarcodeView : UIViewController
     {
         AVCaptureSession captureSession = new AVCaptureSession();
         AVCaptureVideoPreviewLayer previewLayer = new AVCaptureVideoPreviewLayer();
