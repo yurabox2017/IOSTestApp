@@ -44,10 +44,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
-    <MtouchArch>ARMv7, ARMv7s, ARM64</MtouchArch>
-    <CodesignEntitlements>
-    </CodesignEntitlements>
-    <CodesignKey>iPhone Developer: stimorol8@gmail.com (FELRLRY89Z)</CodesignKey>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <MtouchLink>SdkOnly</MtouchLink>
     <CodesignProvision>iOS Team Provisioning Profile: com.xamarin.dirols85.IOSTestApp</CodesignProvision>
@@ -182,10 +181,10 @@
     <WebReferences Include="Web References\" />
   </ItemGroup>
   <ItemGroup>
-    <WebReferenceUrl Include="http://172.16.10.5:8080/Service1.svc">
+    <WebReferenceUrl Include="http://192.168.142.1:8080/Service1.svc">
       <UrlBehavior>Dynamic</UrlBehavior>
       <RelPath>Web References\WebReference\</RelPath>
-      <UpdateFromURL>http://172.16.10.5:8080/Service1.svc</UpdateFromURL>
+      <UpdateFromURL>http://192.168.142.1:8080/Service1.svc</UpdateFromURL>
       <ServiceLocationURL>
       </ServiceLocationURL>
       <CachedDynamicPropName>
