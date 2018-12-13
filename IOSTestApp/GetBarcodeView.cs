@@ -5,6 +5,7 @@ using CoreFoundation;
 using UIKit;
 using Foundation;
 using AVFoundation;
+using ZXing;
 
 namespace IOSTestApp
 {
@@ -13,12 +14,24 @@ namespace IOSTestApp
     {
         AVCaptureSession captureSession = new AVCaptureSession();
         AVCaptureVideoPreviewLayer previewLayer = new AVCaptureVideoPreviewLayer();
+        UIButton buttonScan = new UIButton();
+
 
         public GetBarcodeView()
         {
+            buttonScan.TouchDown += (sender, e) =>
+            {
+
+                var scanner = new ZXing.Mobile.MobileBarcodeScanner();
+                var result = await scanner.Scan();
+
+                if (result != null)
+                    Console.WriteLine("Scanned Barcode: " + result.Text);
+            };
         }
         protected GetBarcodeView(IntPtr handle) : base(handle)
         {
+
             // Note: this .ctor should not contain any initialization logic.
         }
 
@@ -30,11 +43,12 @@ namespace IOSTestApp
             // Release any cached data, images, etc that aren't in use.
         }
 
+
         public override void ViewDidLoad()
         {
 
             base.ViewDidLoad();
-            initCameraView();
+            //  initCameraView();
 
             // Perform any additional setup after loading the view
         }
@@ -56,5 +70,6 @@ namespace IOSTestApp
             View.BackgroundColor = UIColor.GroupTableViewBackgroundColor.ColorWithAlpha((float)0.7);
 
         }
+
     }
 }
