@@ -5,7 +5,7 @@ using CoreFoundation;
 using UIKit;
 using Foundation;
 using AVFoundation;
-using ZXing;
+using CoreGraphics;
 
 namespace IOSTestApp
 {
@@ -14,21 +14,19 @@ namespace IOSTestApp
     {
         AVCaptureSession captureSession = new AVCaptureSession();
         AVCaptureVideoPreviewLayer previewLayer = new AVCaptureVideoPreviewLayer();
-        UIButton buttonScan = new UIButton();
-
 
         public GetBarcodeView()
-        {
-            buttonScan.TouchDown += (sender, e) =>
-            {
+        { }
+        //    buttonScan.TouchDown += (sender, e) =>
+        //    {
 
-                var scanner = new ZXing.Mobile.MobileBarcodeScanner();
-                var result = await scanner.Scan();
+        //        var scanner = new ZXing.Mobile.MobileBarcodeScanner();
+        //        var result = await scanner.Scan();
 
-                if (result != null)
-                    Console.WriteLine("Scanned Barcode: " + result.Text);
-            };
-        }
+        //        if (result != null)
+        //            Console.WriteLine("Scanned Barcode: " + result.Text);
+        //    };
+        //}
         protected GetBarcodeView(IntPtr handle) : base(handle)
         {
 
@@ -46,6 +44,21 @@ namespace IOSTestApp
 
         public override void ViewDidLoad()
         {
+            //var btn = UIButton.FromType(UIButtonType.System);
+            //btn.Frame = new CGRect(20, 200, 280, 44);
+            //btn.SetTitle("Click Me", UIControlState.Normal);
+
+            //View.AddSubview(btn);
+
+            //btn.TouchUpInside += (sender, e) =>
+            //{
+
+            //    var scanner = new ZXing.Mobile.MobileBarcodeScanner();
+            //    var result = await scanner.Scan();
+
+            //    if (result != null)
+            //        Console.WriteLine("Scanned Barcode: " + result.Text);
+            //};
 
             base.ViewDidLoad();
             //  initCameraView();

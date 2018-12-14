@@ -36,7 +36,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue id="2123" destination="482" kind="push" identifier="123"/>
+                                    <segue id="3148" destination="3072" kind="push"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -49,7 +49,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-588" y="-159"/>
+            <point key="canvasLocation" x="-545" y="-171"/>
         </scene>
         <scene sceneID="481">
             <objects>
@@ -87,7 +87,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="484" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-69" y="-153"/>
+            <point key="canvasLocation" x="435" y="-89"/>
         </scene>
         <scene sceneID="2157">
             <objects>
@@ -120,6 +120,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2476" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="585" y="-144"/>
+        </scene>
+        <scene sceneID="3071">
+            <objects>
+                <viewController id="3072" sceneMemberID="viewController" customClass="ZXingScannerPage">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3069"/>
+                        <viewControllerLayoutGuide type="bottom" id="3070"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3073">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3074" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7" y="-193"/>
         </scene>
     </scenes>
 </document>
