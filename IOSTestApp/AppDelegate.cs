@@ -21,8 +21,11 @@ namespace IOSTestApp
         {
             // Override point for customization after application launch.
             // If not required for your application you can safely delete this method
+            global::Xamarin.Forms.Forms.Init();
+
             global::ZXing.Net.Mobile.Forms.iOS.Platform.Init();
-            
+
+
             return true;
         }
 

@@ -52,7 +52,7 @@
     </CodesignEntitlements>
     <CodesignKey>iPhone Developer: stimorol8@gmail.com (FELRLRY89Z)</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
-    <MtouchLink>None</MtouchLink>
+    <MtouchLink>SdkOnly</MtouchLink>
     <CodesignProvision>iOS Team Provisioning Profile: com.xamarin.dirols85.TestIOS</CodesignProvision>
     <CodesignExtraArgs />
     <CodesignResourceRules />
@@ -184,9 +184,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppDataService.cs" />
-    <Compile Include="GetBarcodeView.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="ScannerBarcodeView.cs" />
+    <Compile Include="ScannerBarcodeView.designer.cs">
+      <DependentUpon>ScannerBarcodeView.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewController.cs" />
     <Compile Include="ViewController.designer.cs">
       <DependentUpon>ViewController.cs</DependentUpon>
@@ -196,7 +199,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
     </Compile>
-    <Compile Include="ZXingScannerPage.cs" />
   </ItemGroup>
   <ItemGroup>
     <WebReferences Include="Web References\" />

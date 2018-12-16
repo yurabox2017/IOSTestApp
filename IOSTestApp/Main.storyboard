@@ -32,12 +32,17 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="505" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="184" y="509" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" heightSizable="YES" widthSizable="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue id="3148" destination="3072" kind="push"/>
+                                    <segue id="4139" destination="3850" kind="show"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8693" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="178" y="441" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
                             </button>
                         </subviews>
                     </view>
@@ -49,45 +54,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-545" y="-171"/>
-        </scene>
-        <scene sceneID="481">
-            <objects>
-                <viewController id="482" sceneMemberID="viewController" customClass="GetBarcodeView">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="479"/>
-                        <viewControllerLayoutGuide type="bottom" id="480"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="483">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2478" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="174" y="397" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue id="2583" destination="2474" kind="push"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2587" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="174" y="531" width="90" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="buttonScan"/>
-                                <connections>
-                                    <action selector="ButtonScan_TouchUpInside:" destination="482" id="2601" eventType="touchUpInside"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                    </view>
-                    <connections>
-                        <outlet property="buttonScan" destination="2587" id="name-outlet-2587"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="484" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="435" y="-89"/>
+            <point key="canvasLocation" x="-1336" y="-149"/>
         </scene>
         <scene sceneID="2157">
             <objects>
@@ -97,46 +64,46 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue id="2240" destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController"/>
+                        <segue id="4013" destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2161" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1058" y="-153"/>
+            <point key="canvasLocation" x="-1901" y="-170"/>
         </scene>
-        <scene sceneID="2473">
+        <scene sceneID="3849">
             <objects>
-                <viewController id="2474" sceneMemberID="viewController" customClass="ZXingScannerPage">
+                <viewController id="3850" sceneMemberID="viewController" customClass="ScannerBarcodeView">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="2471"/>
-                        <viewControllerLayoutGuide type="bottom" id="2472"/>
+                        <viewControllerLayoutGuide type="top" id="3847"/>
+                        <viewControllerLayoutGuide type="bottom" id="3848"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="2475">
+                    <view key="view" contentMode="scaleToFill" id="3851">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2476" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3852" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="585" y="-144"/>
+            <point key="canvasLocation" x="-786" y="-154"/>
         </scene>
-        <scene sceneID="3071">
+        <scene sceneID="4599">
             <objects>
-                <viewController id="3072" sceneMemberID="viewController" customClass="ZXingScannerPage">
+                <viewController id="4600" sceneMemberID="viewController" customClass="ZXingScannerPage">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="3069"/>
-                        <viewControllerLayoutGuide type="bottom" id="3070"/>
+                        <viewControllerLayoutGuide type="top" id="4597"/>
+                        <viewControllerLayoutGuide type="bottom" id="4598"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="3073">
+                    <view key="view" contentMode="scaleToFill" id="4601">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3074" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4602" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7" y="-193"/>
+            <point key="canvasLocation" x="-306" y="-160"/>
         </scene>
     </scenes>
 </document>

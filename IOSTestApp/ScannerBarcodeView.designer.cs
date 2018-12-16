@@ -7,11 +7,12 @@
 using Foundation;
 using System;
 using System.CodeDom.Compiler;
+using UIKit;
 
 namespace IOSTestApp
 {
-    [Register ("ZXingScannerPage")]
-    partial class ZXingScannerPage
+    [Register ("ScannerBarcodeView")]
+    partial class ScannerBarcodeView
     {
         void ReleaseDesignerOutlets ()
         {
