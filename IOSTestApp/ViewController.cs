@@ -36,10 +36,11 @@ namespace IOSTestApp
                 //scanner.TopText = "Hold camera up to barcode to scan";
                 //scanner.BottomText = "Barcode will automatically scan";
                 //scanner.UseCustomOverlay = false;
-                scanner.FlashButtonText = "Flash";
+                scanner.FlashButtonText = "Подсветка";
                 scanner.CancelButtonText = "Выход";
                 scanner.Torch(true);
                 scanner.AutoFocus();
+                //scanner.opt
 
                 var result = await scanner.Scan(true);
                 HandleScanResult(result);
